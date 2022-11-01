@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AraGecisController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_musteri" layoutX="259.0" layoutY="181.0" mnemonicParsing="false" onAction="#btn_musteri_click" prefHeight="58.0" prefWidth="78.0" text="Müşteri&#10; Listesi" />
+            <Button fx:id="btn_satisgoruntule" layoutX="40.0" layoutY="181.0" mnemonicParsing="false" onAction="#btn_satisgoruntule_click" prefHeight="58.0" prefWidth="78.0" text="Satışları&#10; Görüntüle" />
+            <Button fx:id="btn_satis" layoutX="40.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn_satis_click" prefHeight="58.0" prefWidth="78.0" text="Satış" />
+            <Button fx:id="btn_urun_ekle" layoutX="152.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn_urun_ekle_click" prefHeight="58.0" prefWidth="78.0" text="Ürün Ekle" />
+            <Button fx:id="btn_kullanici_ekle" layoutX="260.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn_kullanici_ekle_click" prefHeight="58.0" prefWidth="77.0" text="Kullanıcı &#10;   Ekle" />
+            <Button fx:id="btn_goruntule" layoutX="152.0" layoutY="181.0" mnemonicParsing="false" onAction="#btn_goruntule_click" prefHeight="58.0" prefWidth="78.0" text="Ürünleri &#10;Görüntüle" />
+            <Label layoutX="100.0" layoutY="41.0" prefHeight="38.0" prefWidth="181.0" text="Yapmak İstediğiniz İşlemi Seçiniz" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

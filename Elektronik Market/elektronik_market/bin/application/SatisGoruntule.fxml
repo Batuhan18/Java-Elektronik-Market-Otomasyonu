@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.SatisGoruntuleController">
+   <children>
+      <SplitPane dividerPositions="0.2672413793103448" layoutX="95.0" layoutY="56.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="349.0">
+               <children>
+                  <Button fx:id="btn_anamenu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_anamenu_click" text="Ana Menü" />
+                  <Button fx:id="btn_goruntule" layoutX="137.0" layoutY="49.0" mnemonicParsing="false" onAction="#btn_goruntule_click" text="Görüntüle" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tbl_satislar" layoutX="67.0" layoutY="-14.0" prefHeight="172.0" prefWidth="348.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tbl_urunad" prefWidth="89.59990841150284" text="Ürün Adı" />
+                      <TableColumn fx:id="tbl_tarih" prefWidth="109.60003662109375" text="Tarih" />
+                        <TableColumn fx:id="tbl_adet" prefWidth="59.200042724609375" text="Adet" />
+                        <TableColumn fx:id="tbl_fiyat" prefWidth="90.40005493164062" text="Fiyat" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

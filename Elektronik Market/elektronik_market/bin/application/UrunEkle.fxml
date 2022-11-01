@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.UrunEkleController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="combo_kategori" layoutX="151.0" layoutY="62.0" prefWidth="150.0" onAction="#combo_kategori_click" promptText="Kategori" />
+            <TextField fx:id="txt_urun_adı" layoutX="152.0" layoutY="106.0" onAction="#txt_urun_adı_click" promptText="Ürün Adı" />
+            <TextField fx:id="txt_fiyat" layoutX="152.0" layoutY="150.0" promptText="Fiyat   TL" />
+            <TextField fx:id="txt_adet" layoutX="152.0" layoutY="200.0" promptText="Adet" />
+            <Label layoutX="54.0" layoutY="66.0" text="Tüm Ürünler:" />
+            <Label layoutX="54.0" layoutY="110.0" text="Ürün Adı:" />
+            <Label layoutX="54.0" layoutY="154.0" text="Fiyat:" />
+            <Label layoutX="54.0" layoutY="204.0" text="Adet" />
+            <Button fx:id="btn_ekle" layoutX="250.0" layoutY="248.0" mnemonicParsing="false" onAction="#btn_ekle_click" prefHeight="26.0" prefWidth="50.0" text="Ekle" />
+            <Button fx:id="btn_sil" layoutX="175.0" layoutY="248.0" mnemonicParsing="false" onAction="#btn_sil_click" prefHeight="26.0" prefWidth="50.0" text="Sil" />
+            <Button fx:id="btn_anamenu" layoutX="28.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_anamenu_click" text="Ana Menü" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

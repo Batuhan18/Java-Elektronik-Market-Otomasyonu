@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.GoruntuleController">
+   <children>
+      <SplitPane dividerPositions="0.3132183908045977" layoutX="54.0" layoutY="53.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="349.0">
+               <children>
+                  <Button fx:id="btn_anamenu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_anamenu_click" text="Ana Menü" />
+                  <Button fx:id="btn_goruntule" layoutX="155.0" layoutY="53.0" mnemonicParsing="false" onAction="#btn_goruntule_click" text="Görüntüle" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="349.0">
+               <children>
+                  <TableView fx:id="tbl_urunler" layoutX="74.0" layoutY="6.0" prefHeight="236.8" prefWidth="348.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tbl_urungrup" prefWidth="102.39995723962784" text="Ürün Grup" />
+                      <TableColumn fx:id="tbl_urunad" prefWidth="104.0" text="Ürün Ad" />
+                        <TableColumn fx:id="tbl_fiyat" prefWidth="76.00003051757812" text="Fiyat" />
+                        <TableColumn fx:id="tbl_adet" prefWidth="68.0" text="Adet" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
